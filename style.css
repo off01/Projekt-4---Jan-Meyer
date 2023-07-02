@@ -521,3 +521,61 @@ body.dark-mode p {
 .dark-mode .input-box input {
     color: white;
 }
+
+.dark-mode .contact label {
+    color: white;
+}
+
+.dark-mode .contact input,
+.contact textarea {
+    color: white;
+}
+
+/*media*/
+@media (max-width: 768px) {
+    .About {
+        width: 70%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Login {
+        width: 70%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        width: 70%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 70%;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .description-text-image {
+        display: none;
+    }
+    .container-of-othrs {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container h6 {
+        padding: 10px;
+        font-size: 10px;
+        line-height: 11.72px;
+        font-weight: 700;
+    }
+}
