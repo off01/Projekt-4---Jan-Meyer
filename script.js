@@ -1,6 +1,6 @@
 const menuIcon = document.querySelector(".menu-icon");
-const menuList = document.querySelector("nav");
-const hamburgerIcon = document.querySelector(".fa-solid");
+const menuList = document.querySelector(".navigation");
+const hamburgerIcon = document.querySelector(".open-nav");
 
 menuIcon.addEventListener("click", () => {
     if (hamburgerIcon.classList[1] === "fa-bars") {
@@ -129,10 +129,14 @@ document.addEventListener('DOMContentLoaded', function() {
       passwordInput.value = '';
     } else if (email === 'j4n.meyer@gmail.com' && password !== 'heslo123') {
       console.log('Nesprávné heslo');
+      emailInput.value = '';
+      passwordInput.value = '';
     } else {
       signUpForm.querySelector('input[type="email"]').value = email;
       loginForm.style.display = 'none';
       signUpForm.style.display = 'block';
+      emailInput.value = '';
+      passwordInput.value = '';
     }
   });
 });
