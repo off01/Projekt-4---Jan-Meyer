@@ -651,3 +651,9 @@ body.dark-mode p {
         font-weight: 700;
     }
 }
+
+@media (min-width: 769px){
+    header nav {
+        display: block !important;       
+    }
+}
