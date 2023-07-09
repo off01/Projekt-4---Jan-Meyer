@@ -20,7 +20,6 @@ header {
 
 .menu-icon {
     display: none;
-    margin-right: 30px; /*bude potřeba upravit v responsiví části*/
 }
 
 .menu-icon img {
@@ -169,7 +168,7 @@ main {
 
 .input-box label {
     position: absolute;
-    top: 50%;
+    top: -5px;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
@@ -177,11 +176,6 @@ main {
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
-}
-
-.input-box input:focus ~ label,
-.input-box input:valid ~ label {
-    top: -5px;
 }
 
 .input-box input {

@@ -18,12 +18,13 @@
                 <a href="#About Us">About</a>
                 <a href="#Services">Services</a>
                 <a href="#Contact">Contact</a>
+                <div class="center-ele">
                 <button class="btnLogin-popup">Login</button>
                 <img src="./img/moon.svg" id="dark_mode" class="mode-icon">
+                </div>
             </nav>
             <div class="menu-icon">
                 <img src="./img/menu-outline.svg" class="open-nav">
-                <!-- <img src="./img/close-outline.svg" class="close-nav"> -->
             </div> 
     </header>
     <main>
@@ -136,19 +137,19 @@
                     <form class="form-contactUs">
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required >
+                            <input type="text" id="name" name="name" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone:</label>
-                            <input type="phone" id="phone" name="phone" required>
+                            <input type="phone" id="phone" name="phone" required autocomplete="off">
                         </div>
                         <div class="form-group">
                             <label for="message">Message:</label>
-                            <textarea id="message" rows="8" name="message" required></textarea>
+                            <textarea id="message" rows="8" name="message" required autocomplete="off"></textarea>
                         </div>
                         <div>
                             <button type="submit">Send message</button>
