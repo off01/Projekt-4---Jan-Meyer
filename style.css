@@ -42,6 +42,13 @@ header {
     gap: 5px;
 }
 
+.navigation .center-ele {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
 .navigation a {
     position: relative;
     font-size: 1.1em;
@@ -505,6 +512,10 @@ body.dark-mode p {
     background: #000000;
 }
 
+.dark-mode .navigation {
+    background: #000000;
+}
+
 .dark-mode footer {
     background-color: #000000;
 }
@@ -534,11 +545,10 @@ body.dark-mode p {
 }
 
 .dark-mode .contact input,
-.contact textarea {
+.dark-mode .contact textarea {
     color: white;
 }
 
-/*media*/
 @media (max-width: 768px) {
     header {
         position: relative;
@@ -549,25 +559,48 @@ body.dark-mode p {
         top: 70px;
         width: 100%;
         background-color: #efa69d;
+        left: 0;
+        right: 0;
     }
     header .navigation a,
     header .navigation button,
     header .navigation img {
-        display: block;
+        display: flex;
         text-align: center;
+        align-items: center;
+        justify-content: center;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    .menu-icon {
+    header .center-ele {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .menu-icon {
         display: block;
     }
+    header .open-nav {
+        width: 100%;
+        cursor: pointer;
+    }
 }
+
 
 @media (max-width: 768px) {
     .About {
         width: 70%;
         flex-direction: column;
         gap: 2rem;
+    }
+    .grid-about-us-img-main {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-about-us-img-slave {
+        display: flex;
+        flex-direction: column;
     }
 }
 

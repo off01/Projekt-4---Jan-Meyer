@@ -3,16 +3,16 @@ const menuList = document.querySelector(".navigation");
 const hamburgerIcon = document.querySelector(".open-nav");
 
 menuIcon.addEventListener("click", () => {
-    if (hamburgerIcon.classList[1] === "fa-bars") {
-        hamburgerIcon.classList.remove("fa-bars");
-        hamburgerIcon.classList.add("fa-xmark");
-        menuList.style.display = "block";
-    } else {
-        hamburgerIcon.classList.remove("fa-xmark");
-        hamburgerIcon.classList.add("fa-bars");
+    if (menuIcon.classList.contains("open")) {
+        menuIcon.classList.remove("open");
+        hamburgerIcon.src = "./img/menu-outline.svg";
         menuList.style.display = "none";
+    } else {
+        menuIcon.classList.add("open");
+        hamburgerIcon.src = "./img/close-outline.svg";
+        menuList.style.display = "block";
     }
-})
+});
 
 // Funkce pro zobrazení tlačítka "back-to-top" při scrollu
 const backToTopButton = document.querySelector(".back-to-top");
