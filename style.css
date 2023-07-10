@@ -140,11 +140,11 @@ main {
 }
 
 .form-box.login {
-    display: block;
+    display: none;
 }
 
 .form-box.signUp {
-    display: none;
+    display: block;
 }
 
 .Login .wrapper .form-box {
